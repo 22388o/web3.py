@@ -242,7 +242,7 @@ Addresses
 Cryptographic Hashing
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. py:classmethod:: Web3.sha3(primitive=None, hexstr=None, text=None)
+.. py:classmethod:: Web3.keccak(primitive=None, hexstr=None, text=None)
 
     Returns the Keccak SHA256 of the given value. Text is encoded to UTF-8 before
     computing the hash, just like Solidity. Any of the following are
@@ -250,11 +250,11 @@ Cryptographic Hashing
 
     .. code-block:: python
 
-        >>> Web3.sha3(0x747874)
-        >>> Web3.sha3(b'\x74\x78\x74')
-        >>> Web3.sha3(hexstr='0x747874')
-        >>> Web3.sha3(hexstr='747874')
-        >>> Web3.sha3(text='txt')
+        >>> Web3.keccak(0x747874)
+        >>> Web3.keccak(b'\x74\x78\x74')
+        >>> Web3.keccak(hexstr='0x747874')
+        >>> Web3.keccak(hexstr='747874')
+        >>> Web3.keccak(text='txt')
         HexBytes('0xd7278090a36507640ea6b7a0034b69b0d240766fa3f98e3722be93c613b29d2e')
 
 .. py:classmethod:: Web3.soliditySha3(abi_types, value)
